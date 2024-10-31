@@ -9,7 +9,7 @@ public class Recipe {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name="drinK_id", nullable = false)
+    @JoinColumn(name="drink_id", nullable = false)
     private Drink drink;
 
     @ManyToOne
