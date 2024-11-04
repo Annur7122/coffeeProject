@@ -18,6 +18,17 @@ public class Recipe {
 
     private int amount;
 
+    public Recipe(){
+
+    }
+
+    public Recipe(Drink drink, Ingredient ingredient, int amount) {
+        this.id = id;
+        this.drink = drink;
+        this.ingredient = ingredient;
+        this.amount = amount;
+    }
+
     public Long getId() {
         return id;
     }
