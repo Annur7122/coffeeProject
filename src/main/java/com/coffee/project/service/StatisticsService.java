@@ -11,6 +11,10 @@ public class StatisticsService {
     @Autowired
     private StatisticsRepository statisticsRepository;
 
-
+    public void implementDrinkStatistics(Long drinkId){
+        Statistics statistics = statisticsRepository.findByDrinkId(drinkId);
+        statistics.setTimesOrdered(statistics.getTimesOrdered() + 1);
+        statisticsRepository.save(statistics);
+    }
 
 }
