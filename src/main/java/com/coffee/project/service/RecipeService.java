@@ -23,7 +23,7 @@ public class RecipeService {
     @Autowired
     private StatisticsRepository statisticsRepository;
 
-    public Recipe createRecipe(Drink drink, Ingredient ingredient, int amount){
+    public Recipe addRecipe(Drink drink, Ingredient ingredient, int amount){
         Recipe recipe = new Recipe(drink,ingredient,amount);
         return recipeRepository.save(recipe);
     }
