@@ -15,8 +15,7 @@ public class HolidayService {
 
     @Cacheable("holidays")
     public boolean isHoliday(LocalDate date) {
-        String url = HOLIDAY_API_URL.replace("{year}", String.valueOf(date.getYear()))
-                .replace("{country}","Kazakhstan");
+        String url = HOLIDAY_API_URL.replace("{year}", String.valueOf(date.getYear()));
 
         List<Holiday> holidays = restTemplate.getForObject(url, List.class);
 

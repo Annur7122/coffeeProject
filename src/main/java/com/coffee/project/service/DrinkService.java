@@ -23,12 +23,6 @@ public class DrinkService {
     private DrinkRepository drinkRepository;
 
     @Autowired
-    private RecipeRepository recipeRepository;
-
-    @Autowired
-    private IngredientRepository ingredientRepository;
-
-    @Autowired
     private RecipeService recipeService;
 
     @Autowired
